@@ -1,0 +1,12 @@
+<resources>
+    <string name="Attractions">AttractionsApp</string>
+    <string name="activity_main2">Attractions2A</string>
+    <string name="activity_main3">Attractions3A</string>
+    <string-array name="Categories">
+        <item>Historical</item>
+        <item>Cultural</item>
+        <item>Natural</item>
+        <item>Religious</item>
+        <item>Entertainment</item>
+    </string-array>
+</resources>

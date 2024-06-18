@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Attraction Name" />
+
+        <EditText
+            android:id="@+id/countryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country" />
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/crDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Creation Date" />
+
+        <EditText
+            android:id="@+id/categoryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/th"/>
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Photo" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>
