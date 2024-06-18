@@ -56,7 +56,7 @@ public class MainActivity3 extends AppCompatActivity {
             String description = descriptionEditText.getText().toString().trim();
             String coverImage = coverImageEditText.getText().toString().trim();
 
-            AttractionsModel newAttraction = new AttractionsModel(name, country, city, crDate, category, description, coverImage);
+            AttractionsModel newAttraction = new AttractionsModel(0,name, country, city, crDate, category, description, coverImage);
 
             ApiService apiService = RetrofitClient.getRetrofitInstance().create(ApiService.class);
             Call<Void> call = apiService.saveAttraction(newAttraction);
@@ -87,7 +87,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         String imageUrl = ""; // Εδώ θα βάλετε το URL της εικόνας αφού την ανεβάσετε σε έναν server
 
-        AttractionsModel newAttraction = new AttractionsModel(name, country, city, date, category, description, imageUrl);
+        AttractionsModel newAttraction = new AttractionsModel(0,name, country, city, date, category, description, imageUrl);
 
         ApiService apiService = RetrofitClient.getRetrofitInstance().create(ApiService.class);
         Call<Void> call = apiService.saveAttraction(newAttraction);
